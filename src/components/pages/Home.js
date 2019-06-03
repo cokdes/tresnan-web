@@ -2,13 +2,13 @@ import React, {Component} from 'react';
 import Hero from '../layout/Hero';
 import MatchCalculator from '../match-calculator/MatchCalculator';
 import Features from '../layout/Features';
-import ListJodoh from '../jodoh/ListJodoh';
+//import ListJodoh from '../jodoh/ListJodoh';
 import { connect } from 'react-redux'
 
 class Home extends Component{
     render(){
         console.log(this.props)
-        const { jodohs } = this.props;
+        //const { jodohs } = this.props;
         return(
             <div>
                 <Hero/>
@@ -16,7 +16,7 @@ class Home extends Component{
                     <div className="container">
                         <MatchCalculator/>
                         <Features/>
-                        <ListJodoh jodohs={jodohs}/>
+                        {/* <ListJodoh jodohs={jodohs}/> */}
                     </div>
                 </div>
             </div>

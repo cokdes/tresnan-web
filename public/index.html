@@ -45,12 +45,16 @@
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.datepicker');
+        var select = document.querySelectorAll('select');
+
         var instances = M.Datepicker.init(elems, {
           format: 'dd-mmm-yyyy',
           onSelect:function(instances){
             elems.values=instances;
           }
         });
+
+        var instances1 = M.FormSelect.init(select,{});
       });
     </script>
   </body>
